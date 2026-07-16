@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-16T04:09:39Z",
+  "_captured_run_id": "r_a97c8f4e62934881bab0f332b67f2fff",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DATA pseudo_column",
+    "NOTE: Wrote pseudo_column (3 rows, 4 columns).",
+    "NOTE: PROC PRINT data=pseudo_column",
+    "NOTE: PROC PRINT completed: 3 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

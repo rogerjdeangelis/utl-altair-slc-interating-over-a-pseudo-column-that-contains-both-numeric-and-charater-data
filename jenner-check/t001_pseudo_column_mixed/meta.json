@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_pseudo_column_mixed",
+  "source_file": "utl-altair-slc-interating-over-a-pseudo-column-that-contains-both-numeric-and-charater-data.sas",
+  "source_blob_sha": "f7453c75c94f42a6a3df4a2f8772ad22dbd482af",
+  "source_commit": "e8d34ebb3def5086e38c93228276e96b062f3c73",
+  "notes": "Source repo's runnable logic is Altair SLC PROC R (options set=RHOME; proc r; submit; ... endsubmit;) iterating over an R list holding both a numeric and a character element (list(a=1, a='text', a=3)) and blanking any element equal to the sentinel 'text'. PROC R is an Altair SLC/WPS-specific R-integration procedure, not core SAS 9.4, and requires an R install -- not portable as-is. This bundle re-expresses the same algorithm (iterate over a pseudo column of mixed numeric/character data; blank the sentinel 'text'; leave numeric positions untouched) in idiomatic SAS: a character ARRAY (_temporary_) carrying the mixed values as text plus a type flag, walked with a DO loop and an IF/THEN blank-out, reusing the source's exact literal values (1, 'text', 3) and sentinel string. Real bundle derived from the source repo's stated problem and worked values, not a generic Jenner demo."
+}

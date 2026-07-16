@@ -1,0 +1,7 @@
+                            Iterating over a pseudo column with mixed numeric/character data
+
+Position  Type (N/C)  Input value  Output value
+       1  N           1            1
+       2  C           text
+       3  N           3            3
+
